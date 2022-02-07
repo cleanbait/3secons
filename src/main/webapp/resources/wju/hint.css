@@ -1,0 +1,704 @@
+@charset "utf-8";
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* reset */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,textarea,p,blockquote,th,td,input,select,button{margin:0;padding:0}
+fieldset,img{border:0 none}
+dl,ul,ol,menu,li{list-style:none}
+blockquote, q{quotes:none}
+blockquote:before, blockquote:after,q:before, q:after{content:'';content:none}
+input,select,textarea,button{vertical-align:middle;font-size:100%}
+button{border:0 none;background-color:transparent;cursor:pointer}
+table{border-collapse:collapse;border-spacing:0}
+body{-webkit-text-size-adjust:none}
+input:checked[type='checkbox']{background-color:#666; -webkit-appearance:checkbox}
+input[type='text'],input[type='password'],input[type='submit'],input[type='search'],input[type='tel'],input[type='email'],html input[type='button'],input[type='reset']{-webkit-appearance:none;border-radius:0}
+input[type='search']::-webkit-search-cancel-button{-webkit-appearance:none}
+body{background:#fff}
+body,th,td,input,select,textarea,button{font-size:14px;line-height:1.5;font-family:'Apple SD Gothic Neo’,’Malgun Gothic',sans-serif;color:#333}
+a{color:#333;text-decoration:none}
+a:active, a:hover{text-decoration:none}
+address,caption,cite,code,dfn,em,var{font-style:normal;font-weight:normal}
+
+/* global */
+#kakaoIndex{overflow:hidden;position:absolute;left:-9999px;width:0;height:1px;margin:0;padding:0}
+.ir_pm{display:block;overflow:hidden;font-size:1px;line-height:0;color:transparent}
+.ir_wa{display:block;overflow:hidden;position:relative;z-index:-1;width:100%;height:100%}
+.ir_caption{overflow:hidden;width:1px;font-size:1px;line-height:0;text-indent:-9999px}
+.screen_out{overflow:hidden;position:absolute;width:0;height:0;line-height:0;text-indent:-9999px}
+.show{display:block}
+.hide{display:none}
+
+html,body{height:100%;min-width:320px}
+#kakaoWrap{position:relative;min-height:100%}
+#kakaoContent{display:block;padding-bottom:81px}
+#mArticle{padding-bottom:25px}
+
+.view_pc{display:none}
+.bg_gray{background-color:#fafafa}
+.img_cs{display:block;width:100%}
+.btn_commcs{display:block;height:40px;font-size:13px;color:#fff;line-height:41px;background-color:#5d6468;text-align:center}
+.btn_commcs:active{background-color:#5d6468} /* 2019-08-09 추가 */
+.btn_commcs:disabled,.btn_commcs.btn_disabled{opacity:0.3;pointer-events:none}
+.ico_commercecs{display:block;overflow:hidden;font-size:1px;line-height:0;color:transparent;background:url(https://st.kakaocdn.net/commerce_cs/images/m/ico_commercecs_210222.png) no-repeat;-webkit-background-size:100px 70px;background-size:100px 70px}/* 2021-02-22 수정 */
+.foot_none #kakaoContent,.foot_none #mArticle{padding-bottom:0}
+
+/* head */
+.head_customer{padding:0 20px;background-color:#fff;box-shadow:0 1px 0 rgba(0,0,0,.2)}
+.head_customer .tit_logo{overflow:hidden}
+.head_customer .img_logo{display:block;overflow:hidden;background-position:0 0;background-repeat:no-repeat;-webkit-background-size:100%;background-size:100%}
+.head_customer .link_logo{float:left;position:relative;z-index:10;padding:17px 0 18px}
+.head_customer .link_logo .img_logo{width:254px;height:25px;background-image:url(E:/Library/Downloads/img_logo3.png)}
+.head_customer .link_logo:only-child .img_logo{background-image:url(E:/Library/Downloads/img_logo.png)}
+.head_customer .ir_wa{font-size:14px;line-height:25px}
+
+
+/* foot */
+/* 2021-03-15 수정 시작 */
+.foot_customer{position:absolute;left:0;right:0;bottom:0;padding:24px 0 25px;border-top:1px solid #efefef;font-size:0;color:#666;background-color:#fafafa;text-align:center}
+.foot_customer .tit_commerce, .foot_customer .link_cs{display:inline-block;font-weight:normal;font-size:12px;line-height:16px;letter-spacing:-0.025em;vertical-align:top}/* 2021-01-22 수정 */
+.foot_customer .link_cs{color:#666}/* 2021-01-22 추가 */
+.foot_customer .bar_g{display:inline-block;vertical-align:top;width:1px;height:7px;margin:4px 6px 0;background-color:#D8D8D8}/* 2021-03-15 추가 */
+.foot_customer .txt_copyright{display:block;margin-top:3px;font-size:10px;line-height:12px;letter-spacing:-0.025em}
+/* // 2021-03-15 수정 끝 */
+.foot_customer .txt_copyright .link_service{color:#666}
+
+/* main */
+.detail_maincs{overflow:hidden}
+.detail_maincs .txt_welcome{display:block;overflow:hidden;width:275px;height:66px;margin:30px 0 0 40px;font-size:1px;line-height:0;color:transparent;background:url(https://st.kakaocdn.net/commerce_cs/images/m/txt_welcome_191001.png) 0 0 no-repeat;-webkit-background-size:100%;background-size:100%}/* 2019-10-01 수정 */
+.detail_maincs .link_main{display:inline-block;float:left;margin-bottom:49px;font-weight:normal;font-size:14px;line-height:18px;color:#666;vertical-align:top;text-indent:-2px}/* 2021-02-22 수정 */
+/* 2021-02-22 추가 시작 */
+.detail_maincs .link_main:after{display:block;clear:both;content:''}
+.detail_maincs .link_main .emph_main{font-weight:bold}/* 2021-02-22_v2 수정 */
+.detail_maincs .link_main .ico_arr{float:right;width:10px;height:9px;margin:4px 0 0 4px;background-position:-95px -25px}
+
+/* 툴팁 */
+.wrap_tooltip{display:block;position:relative}
+.wrap_tooltip:after{display:block;clear:both;content:''}
+.wrap_tooltip .btn_info{margin-top:-6px;padding:7px 5px}
+.wrap_tooltip .btn_info .ico_commercecs{width:16px;height:16px;background-position:-70px -50px}
+.wrap_tooltip .tooltip_layer{display:none;position:absolute;left:-2px;top:21px;z-index:10;width:100%;padding:20px 15px 13px;border:1px solid #b6b6b6;border-radius:4px;background-color:#fff;-webkit-box-sizing:border-box;box-sizing:border-box;max-width:283px}
+.wrap_tooltip.tooltip_show .tooltip_layer{display:block}
+.wrap_tooltip .tooltip_layer .tit_tooltip{display:block;margin-right:20px;font-weight:bold;font-size:15px;line-height:18px;color:#333;letter-spacing:-0.02em}
+.wrap_tooltip .tooltip_layer .tit_sub{display:block;margin-top:11px;font-weight:500;font-size:13px;line-height:19px;color:#333}
+.wrap_tooltip .tooltip_layer .tit_sub:first-of-type{margin-top:10px}
+.wrap_tooltip .tooltip_layer .txt_desc{display:block;margin-top:7px;font-size:13px;line-height:18px;color:#666;letter-spacing:-0.02em;word-break:break-all}
+.wrap_tooltip .tooltip_layer .area_scroll{display:block;overflow:auto;margin-top:12px;max-height:335px}
+.wrap_tooltip .tooltip_layer .link_txt{display:block;font-size:13px;line-height:18px;text-decoration:underline;color:#5F8CD1}
+.wrap_tooltip .tooltip_layer .btn_close{position:absolute;right:0;top:0}
+.wrap_tooltip .tooltip_layer .btn_close .ico_close{display:block;float:none;width:11px;height:11px;margin:12px;background-position:-85px -35px}
+.wrap_tooltip.is_nontitle .btn_info{float:right;width:auto}
+.wrap_tooltip.is_nontitle .tooltip_layer{left:auto;right:0;width:100%;padding-top:10px;padding-bottom:10px;max-width:239px}
+.wrap_tooltip.is_nontitle .tooltip_layer .txt_desc{margin-right:18px}
+/* // 2021-02-22 추가 끝 */
+.detail_maincs .tit_main{font-weight:normal;font-size:14px;line-height:18px;color:#999;letter-spacing:-0.09em}/* 2020-12-14 수정 */
+.detail_maincs .bundle_buyer{margin:29px 35px 0 40px}/* 2019-10-01 수정 */
+.list_service{padding-top:18px;margin:-6.67% 0 0 -5%}
+.list_service:after{display:block;clear:both;content:''}
+.list_service li{float:left;width:33.333%;padding:6.35% 0 0 4.76%;-webkit-box-sizing:border-box;box-sizing:border-box}
+.list_service .link_service{display:block;position:relative;padding-top:133.7%;border-bottom-right-radius:22.22% 16.66%;background-color:#fff;box-shadow:2px 2px 10px rgba(0,0,0,.03)}
+.list_service .inner_service{position:absolute;left:0;top:0;width:100%;height:100%}
+.list_service .img_service{padding:13.33% 22.22% 0;-webkit-box-sizing:border-box;box-sizing:border-box}
+.list_service .txt_service{position:absolute;left:13.33%;right:19.8%;bottom:0;padding:0 0 10%;color:#444;line-height:18px;letter-spacing:-0.03em}
+.list_service .word_service{font-weight:bold}
+.list_service .ico_arrow{position:absolute;left:80.2%;bottom:0;width:4px;height:7px;margin:0 0 15.22%;background-position:0 0}
+.detail_maincs .bundle_seller{margin:36px 35px 0 40px}/* 2021-02-22 수정 */
+.bundle_seller .list_service{padding-top:20px}
+.bundle_seller .list_service .link_service{padding-top:66.666%;border-bottom-right-radius:22.22% 33.33%;background-color:#5d6468;box-shadow:none}
+.bundle_seller .list_service .txt_service{left:11.5%;bottom:auto;top:0;padding:13.33% 0 0;color:#fff}
+.bundle_seller .list_service .ico_arrow{bottom:auto;top:0;margin:17.77% 0 0;background-position:-5px 0}
+
+/* help */
+.search_helpcs{padding:0 20px;background-color:#fff}
+.cmmrcapps_view .search_helpcs{padding-top:15px}/* 2019-11-21 추가 */
+.search_helpcs .txt_search{display:none}
+.search_helpcs .box_search{position:relative;padding:9px 45px 10px 11px;border:1px solid rgba(193,193,193,.6);border-radius:5px;background-color:#fafafa}
+.search_helpcs .tf_search{display:block;width:100%;height:24px;border:0 none;font-size:16px;line-height:25px;color:#222;letter-spacing:-0.02em;background-color:transparent}
+.search_helpcs .tf_search::-webkit-input-placeholder{color:rgba(167,167,167,.6)}
+.search_helpcs .tf_search:-moz-placeholder{color:rgba(167,167,167,.6)}
+.search_helpcs .tf_search::-moz-placeholder{color:rgba(167,167,167,.6)}
+.search_helpcs .tf_search:-ms-input-placeholder{color:rgba(167,167,167,.6)}
+.search_helpcs .tf_search::placeholder{color:rgba(167,167,167,.6)}
+.search_helpcs .btn_search{position:absolute;right:0;top:0;padding:9px 16px 9px 0}
+.search_helpcs .btn_search .ico_commercecs{width:25px;height:25px;background-position:-10px 0}
+.sort_helpcs{margin-top:4px}
+.sort_helpcs .upper_sort{overflow:hidden;position:relative;z-index:10;height:46px;box-shadow:0 1px 0 rgba(0,0,0,.2)}
+.sort_helpcs .list_upper{overflow:auto;padding:0 5px 20px;font-size:0;white-space:nowrap;-webkit-overflow-scrolling:touch}
+.sort_helpcs .list_upper li{display:inline-block;vertical-align:top}
+.sort_helpcs .list_upper .link_upper{display:block;position:relative;padding:14px 15px;font-size:15px;line-height:18px;letter-spacing:-0.06em}
+.sort_helpcs .list_upper .link_all{color:#222}
+.sort_helpcs .list_upper .on{font-weight:bold}
+.sort_helpcs .list_upper .on:after{position:absolute;left:15px;right:15px;bottom:0;height:2px;background-color:#222;content:''}
+.sort_helpcs .list_under{overflow:hidden;position:relative;background-color:#fafafa}
+.sort_helpcs .list_under:after{position:absolute;left:0;right:0;bottom:0;height:1px;background-color:#efefef;content:''}
+.sort_helpcs .list_under li{float:left;position:relative;width:50%;border-bottom:1px solid #efefef}
+.sort_helpcs .list_under li:before{position:absolute;right:-1px;top:0;bottom:0;width:1px;background-color:#efefef;content:''}
+.sort_helpcs .list_under .link_under{display:block;overflow:hidden;padding:12px 20px 10px;font-size:14px;line-height:18px;color:#888;white-space:nowrap;text-overflow:ellipsis;letter-spacing:-0.03em}
+.sort_helpcs .list_under .on{color:#000}
+.tit_commercecs{padding:40px 18px 15px;font-size:22px;color:#222;line-height:26px;letter-spacing:-0.02em}
+.tit_commercecs .num_result{display:inline-block;font-weight:normal;vertical-align:top}
+.notice_helpcs{overflow:hidden;margin-top:2px;border-top:1px solid #efefef;font-size:12px;line-height:15px}
+.notice_helpcs .tit_notice{float:left;padding:0 8px 0 20px}
+.notice_helpcs .tit_notice .link_all{display:block;padding:13px 0 12px;color:#4495c3}
+.notice_helpcs .about_notice{overflow:hidden}
+.notice_helpcs .bundle_notice{position:relative;padding-right:48px;letter-spacing:-0.03em}
+.notice_helpcs .link_notice{display:inline-block;overflow:hidden;max-width:100%;padding:13px 0 12px;white-space:nowrap;text-overflow:ellipsis;vertical-align:top}
+.notice_helpcs .date_notice{position:absolute;right:0;top:13px;width:48px;font-size:11px;color:#aaa}
+.list_helpcs{border-bottom:1px solid #efefef}
+.list_helpcs li{padding:19px 30px 18px 20px;border-top:1px solid #efefef}
+.list_helpcs .ask_help{position:relative;padding-left:25px;line-height:20px;letter-spacing:-0.03em}
+.list_helpcs .link_category{color:#4495c3}
+.list_helpcs .ico_ask{position:absolute;left:1px;top:3px;width:16px;height:12px;background-position:-60px 0}
+.list_helpcs .answer_help{display:none;position:relative;margin-top:23px;padding:0 0 1px 25px;color:#666;line-height:20px;letter-spacing:-0.03em}
+.list_helpcs .ico_answer{position:absolute;left:2px;top:3px;width:14px;height:12px;background-position:-80px 0}
+.list_helpcs .fold_on{background-color:#fafafa}
+.list_helpcs .fold_on .ask_help{font-weight:bold}
+.list_helpcs .fold_on .answer_help{display:block}
+/* 2020-08-21 추가 시작 */
+.list_helpcs2 .ask_help{padding-left:0}
+.list_helpcs2 .answer_help{display:block;padding-left:0}
+/* 2020-08-21 추가 끝 */
+/* 2020-12-14 추가 시작 */
+.list_helpcs3 .ask_help{padding-left:0}
+.list_helpcs3 .answer_help{padding-left:0}
+/* 2020-12-14 추가 끝 */
+.detail_helpcs .word_ask{font-weight:bold}
+.pack_morecs{margin:0 35px;text-align:center}
+.pack_morecs .link_more{display:block;padding:10px 0 9px;font-size:13px;color:#999;line-height:16px}
+.pack_morecs .link_more .ico_commercecs{display:inline-block;width:10px;height:10px;margin:2px 6px 0 0;background-position:-40px -15px;vertical-align:top}
+.counsel_helpcs{margin-top:38px}
+.counsel_helpcs .time_counsel{font-size:0;color:#888;line-height:15px;text-align:center}
+.counsel_helpcs .time_counsel dt,.counsel_helpcs .time_counsel dd{display:inline-block;font-size:12px;vertical-align:top}
+.counsel_helpcs .time_counsel dt{font-weight:bold;padding-right:5px}
+.counsel_helpcs .wrap_btn{margin-top:9px;font-size:0;text-align:center}/* 2019-10-01 수정 */
+/*.counsel_helpcs .wrap_btn .btn_counsel{display:inline-block;width:150px;height:35px;line-height:36px;vertical-align:top}
+.counsel_helpcs .wrap_btn .btn_counsel+.btn_counsel{margin-left:5px}
+.counsel_helpcs .ico_talk{display:inline-block;width:15px;height:14px;margin:10px 3px 0 0;background-position:-40px 0;vertical-align:top} 2019-10-01 삭제 */
+/* 2019-10-01 추가 시작 */
+.counsel_helpcs .wrap_btn [class*="btn_"]+[class*="btn_"]{margin-left:5px}
+.btn_counselcs{display:inline-block;width:150px;height:41px;font-size:15px;line-height:43px;color:#000;letter-spacing:-0.04em;background-color:#ffe501;text-align:center;vertical-align:top}
+.btn_counselcs .ico_talk{display:inline-block;width:18px;height:17px;margin:12px 7px 0 0;background-position:-50px -45px;vertical-align:top}
+.btn_inquirycs{display:inline-block;width:148px;height:39px;border:1px solid #d8d8d8;font-size:15px;line-height:41px;color:#000;letter-spacing:-0.04em;text-align:center;vertical-align:top}
+/* // 2019-10-01 추가 끝 */
+.detail_helpcs .txt_noresult{display:block;padding:80px 0 163px;color:#222;line-height:20px;text-align:center}
+
+/* inquiry */
+.fld_entercs{min-width:100%;width:320px}
+.detail_entercs{margin-top:-4px}/* 2019-08-14 수정 */
+.detail_entercs .check_before{padding:14px 20px 0}
+.detail_entercs .check_before .tit_before{display:block}
+.detail_entercs .check_before .link_before{display:block;height:38px;border:1px solid #f65b3d;color:#f65b3d;line-height:39px;text-align:center;letter-spacing:-0.03em}
+.detail_entercs .check_before .ico_fold{display:inline-block;width:6px;height:5px;margin:16px 0 0 4px;background-position:-80px -15px;vertical-align:top}
+.detail_entercs .check_before .about_before{display:none;padding:9px 12px 7px;background-color:#fafafa}
+.detail_entercs .list_before li{font-size:13px;line-height:17px;color:#888;letter-spacing:-0.02em}
+.detail_entercs .list_before li+li{margin-top:17px}
+.detail_entercs .check_before.fold_on .about_before{display:block}
+.detail_entercs .check_before.fold_on .ico_fold{background-position:-55px -30px}
+.bundle_entercs{padding:14px 20px 0}
+.bundle_entercs .tit_bundle{display:block;font-weight:normal;font-size:13px;line-height:15px;color:#222}
+.bundle_entercs .tit_bundle .ico_require{display:inline-block;width:5px;height:5px;margin:1px 0 0 2px;background-position:-95px 0;vertical-align:top}
+.bundle_entercs .about_bundle{padding-top:8px}
+.select_entercs{position:relative}
+.select_entercs .link_select{display:block;overflow:hidden;position:relative;height:38px;padding:0 20px 0 9px;border:1px solid #aaa;line-height:39px;color:#aaa;background-color:#fff;white-space:nowrap;text-overflow:ellipsis;letter-spacing:-0.04em}
+.select_entercs .link_select .ico_arrow{position:absolute;right:14px;top:16px;width:6px;height:5px;background-position:-70px -15px}
+.select_entercs .box_opt{position:absolute;left:0;right:0;top:0;height:100%}
+.select_entercs .box_opt .opt_select{width:100%;height:100%;opacity:0.01}
+.select_entercs .opt_layer{display:none}
+.select_entercs.select_done .link_select{color:#222}
+.select_entercs.select_disabled .link_select{border-color:rgba(216,216,216,.5);background-color:rgba(239,239,239,.5);pointer-events:none}
+.select_entercs.select_disabled .link_select .ico_arrow{background-position:-90px -15px}
+.select_entercs.select_disabled .box_opt{display:none}
+.bundle_entercs .split_fill{position:relative}
+.bundle_entercs .split_select{margin:0 -3px}
+.bundle_entercs .split_select:after{display:block;clear:both;content:''}
+.bundle_entercs .split_select .select_entercs{float:left;width:50%;padding:0 3px;-webkit-box-sizing:border-box;box-sizing:border-box}
+.bundle_entercs .split_select .select_entercs:only-of-type{width:100%}/* 1:1문의하기 문의유형 2뎁스가 없을수도 있어 임의로 삽입, 불필요시 삭제요망 */
+.bundle_entercs .split_select .box_opt{left:3px;right:3px}
+.write_entercs{position:relative;padding:11px 9px 9px;border:1px solid #aaa}
+.write_entercs .tf_g{display:block;width:100%;border:0 none;color:#222;line-height:18px;background-color:transparent;letter-spacing:-0.04em}
+.write_entercs .tf_g::-webkit-input-placeholder{color:#aaa}
+.write_entercs .tf_g:-moz-placeholder{color:#aaa}
+.write_entercs .tf_g::-moz-placeholder{color:#aaa}
+.write_entercs .tf_g:-ms-input-placeholder{color:#aaa}
+.write_entercs .tf_g::placeholder{color:#aaa}
+.write_entercs.write_long{padding:0}
+.write_entercs.write_long .tf_g{height:148px;padding:9px 9px 12px;-webkit-box-sizing:border-box;box-sizing:border-box;resize:none}
+.write_entercs.write_long .tf_g::-webkit-input-placeholder{height:148px}
+.write_entercs.write_long .tf_g:-moz-placeholder{height:148px}
+.write_entercs.write_long .tf_g::-moz-placeholder{height:148px}
+.write_entercs.write_long .tf_g:-ms-input-placeholder{height:148px}
+.write_entercs.write_long .tf_g::placeholder{height:148px}
+.bundle_entercs .attach_do{padding:14px 0 11px}
+.bundle_entercs .attach_do .btn_attach{position:relative;width:165px;letter-spacing:-0.03em}
+.bundle_entercs .btn_attach .ico_commercecs{display:inline-block;width:10px;height:10px;margin:15px 4px 0 0;background-position:-55px -15px;vertical-align:top}
+.bundle_entercs .btn_attach .inp_file{position:absolute;left:0;top:0;width:100%;height:100%;opacity:0.01}
+.bundle_entercs .attach_do .desc_attach{padding-top:6px;font-size:12px;color:#888;line-height:18px;letter-spacing:-0.03em}
+.bundle_entercs .attach_view{position:relative;padding:4px 0 11px}
+.bundle_entercs .attach_view:after{display:block;clear:both;content:''}
+.list_attachcs li{padding-top:5px}
+.list_attachcs li:first-child{padding-top:0}
+.list_attachcs .file_attach{position:relative;height:38px;padding:0 145px 0 11px;border:1px solid #d8d8d8;line-height:39px;background-color:#fafafa}
+.list_attachcs .file_attach .name_file{display:block;font-size:13px;color:#4495c3;white-space:nowrap}
+.list_attachcs .file_attach .txt_name{display:inline-block;overflow:hidden;max-width:100%;text-overflow:ellipsis;vertical-align:top}
+.list_attachcs .file_attach .info_file{position:absolute;right:0;top:0;width:84px}
+.list_attachcs .file_attach .size_file{float:left;font-size:12px;color:#9b9b9b}
+.list_attachcs .file_attach .btn_del{float:right;padding:14px}
+.list_attachcs .file_attach .ico_del{width:10px;height:10px;background-position:-40px -30px}
+.bundle_entercs .total_attach{float:right;padding:3px 2px 0 0}
+.bundle_entercs .total_attach dd{float:left;font-weight:bold;font-size:12px;color:#222;line-height:18px;letter-spacing:-0.02em}
+.bundle_entercs .total_attach dd~dd{margin-left:3px}
+.bundle_entercs .split_tel:after{display:block;clear:both;content:''}
+.bundle_entercs .split_tel .select_entercs{float:left;width:100px;margin-right:5px}
+.bundle_entercs .split_tel .write_entercs{overflow:hidden}
+.select_entercs.select_num .link_select{letter-spacing:0}
+.write_entercs.write_tel{padding-left:14px}
+.write_entercs.write_tel .tf_g{letter-spacing:0}
+.detail_agreecs{padding-top:2px}/* 2019-08-14 추가 */
+.agree_entercs{padding:23px 20px 0}
+.check_entercs{position:relative;height:18px}
+.check_entercs:after{display:block;clear:both;content:''}
+.check_entercs .inp_check{position:absolute;left:0;top:0;z-index:-1;width:18px;height:18px;border:0 none;opacity:0.01;-webkit-appearance:none}
+.check_entercs .lab_check{float:left;color:#222;line-height:20px;letter-spacing:-0.03em}
+.check_entercs .lab_check .ico_commercecs{display:inline-block;width:18px;height:18px;margin-right:7px;vertical-align:top}
+.check_entercs .inp_check+.lab_check .ico_commercecs{background-position:0 -25px;}
+.check_entercs .inp_check:checked+.lab_check .ico_commercecs{background-position:-20px -30px}
+.check_entercs .link_all{float:left;padding:0 9px;font-weight:bold;color:#4495c3;line-height:20px;text-decoration:underline;letter-spacing:-0.04em}
+.agree_entercs .box_all{display:none;padding:28px 5px 10px 25px}
+.agree_entercs.fold_on .box_all{display:block}
+.agree_entercs .box_all .tit_all{display:block;color:#222;line-height:16px;letter-spacing:-0.03em}
+.agree_entercs .info_item{padding-top:15px;letter-spacing:-0.02em}
+.agree_entercs .info_item dt{color:#222;line-height:18px}
+.agree_entercs .info_item dd{padding-top:7px;font-size:13px;color:#888;line-height:17px}
+.agree_entercs .list_item{margin-top:11px;border-bottom:1px solid #d8d8d8}
+.agree_entercs .list_item li{position:relative;padding:10px 0;border-top:1px solid #d8d8d8;font-size:13px;line-height:18px;letter-spacing:-0.03em}
+.agree_entercs .list_item .tit_item{position:absolute;left:0;top:50%;width:80px;color:#222;-webkit-transform:translateY(-50%);transform:translateY(-50%)}
+.agree_entercs .list_item .about_item{display:block;padding-left:80px;color:#888}
+.agree_entercs .list_item .on .tit_item{font-size:17px;line-height:26px;color:#1763D0} /* 2021-08-19 추가 */
+.agree_entercs .list_item .on .about_item{font-size:16px;line-height:20px;color:#1763D0} /* 2021-08-19 수정 */
+.agree_entercs .desc_item{padding-top:10px;font-size:13px;color:#888;line-height:17px;letter-spacing:-0.02em}
+.agree_entercs .desc_item .link_privacy{color:#4495c3;text-decoration:underline}
+.fill_error .select_entercs:not(.select_done):not(.select_disabled) .link_select,.fill_error .write_entercs,.select_entercs.fill_error .link_select,.write_entercs.fill_error{border:1px solid #f65b3d}
+.check_entercs.fill_error{margin-top:15px}
+.fld_entercs .txt_error{display:none;font-size:13px;line-height:15px;color:#f65b3d;letter-spacing:-0.03em}
+.fld_entercs  .fill_error .txt_error{display:block}
+.bundle_entercs .split_fill .txt_error,.write_entercs .txt_error,.select_entercs .txt_error{position:absolute;right:0;top:-23px}
+.check_entercs .txt_error{position:absolute;left:0;top:-25px}
+.bundle_entercs .split_select .txt_error{right:3px}
+.bundle_entercs .attach_view .txt_error{position:absolute;left:0;bottom:13px}
+.receive_entercs{padding:25px 20px 0;background-color:#fff}
+.receive_entercs .btn_receive{display:block;width:100%;height:50px;font-size:16px;color:#000000;background-color:#A0FDA8}
+.receive_entercs .btn_receive:disabled{color:rgba(34,34,34,.5);background-color:rgba(239,239,239,.5)}
+
+/* receive */
+/*.alert_receivecs{padding:40px 0 15px;text-align:center}
+.alert_receivecs .img_alert{display:inline-block;width:120px;height:120px;background:url(https://st.kakaocdn.net/commerce_cs/images/m/img_receive.png) 0 0 no-repeat;-webkit-background-size:100%;background-size:100%;vertical-align:top}
+.alert_receivecs .img_fail{background-image:url(https://st.kakaocdn.net/commerce_cs/images/m/img_receive2.png)}
+.alert_receivecs .desc_alert{padding-top:15px;color:#222;line-height:20px;letter-spacing:-0.03em}
+.alert_receivecs .btn_alert{display:inline-block;min-width:200px;margin-top:59px;padding:0 24px;letter-spacing:-0.03em;vertical-align:top;-webkit-box-sizing:border-box;box-sizing:border-box} 2019-08-14 삭제 */
+/* 2019-08-14 추가 시작 */
+.alert_commercecs{padding:40px 0 15px;text-align:center}
+.alert_commercecs .img_alert{display:inline-block;width:120px;height:120px;background:url(https://st.kakaocdn.net/commerce_cs/images/m/img_receive.png) 0 0 no-repeat;-webkit-background-size:100%;background-size:100%;vertical-align:top}
+.alert_commercecs .img_fail{background-image:url(https://st.kakaocdn.net/commerce_cs/images/m/img_receive2.png)}
+.alert_commercecs .img_access{background-image:url(https://st.kakaocdn.net/commerce_cs/images/m/img_fail.png)}
+.alert_commercecs .img_found{background-image:url(https://st.kakaocdn.net/commerce_cs/images/m/img_fail2.png)}
+.alert_commercecs .tit_alert{display:block;padding-top:15px;font-weight:normal;color:#222;line-height:20px;letter-spacing:-0.03em}
+.alert_commercecs .desc_alert{padding-top:8px;margin-bottom:-12px;font-size:11px;color:#777;line-height:16px;letter-spacing:-0.04em}
+.alert_commercecs .btn_alert{display:inline-block;min-width:200px;margin-top:59px;padding:0 24px;letter-spacing:-0.03em;vertical-align:top;-webkit-box-sizing:border-box;box-sizing:border-box}
+/* // 2019-08-14 추가 끝 */
+
+/* app */
+.tab_entercs{border-bottom:1px solid #e0e0e0;font-size:0;background-color:#fafafa;text-align:center}
+.tab_entercs li{display:inline-block;padding:0 20px;vertical-align:top}
+.tab_entercs .link_tab{display:block;position:relative;padding:14px 0 13px;font-size:15px;line-height:18px;letter-spacing:-0.02em}
+.tab_entercs .link_tab[aria-selected="true"]{font-weight:bold;color:#222}
+.tab_entercs .link_tab[aria-selected="true"]:after{position:absolute;left:0;right:0;bottom:-1px;height:3px;background-color:#222;content:''}
+.panel_askcs{padding-top:21px}
+.panel_askcs .detail_entercs{margin-top:0}
+.bundle_entercs .btn_order{font-size:14px}
+.bundle_entercs .list_ordercs{padding:5px 0 10px}
+.list_ordercs li{overflow:hidden;border-bottom:1px solid #efefef}
+.box_ordercs{display:block;position:relative;margin:10px 0;font-family:HelveticaNeue,'Apple SD Gothic Neo',tahoma,'Malgun Gothic',sans-serif}
+.box_ordercs .thumb_order{overflow:hidden;position:absolute;left:0;top:0;width:50px;height:50px}
+.box_ordercs .thumb_order:after{position:absolute;left:0;top:0;width:100%;height:100%;background-color:rgba(34,34,34,.1);content:''}
+.box_ordercs .about_order{display:table;width:100%;height:50px;padding:0 30px 0 62px;table-layout:fixed;-webkit-box-sizing:border-box;box-sizing:border-box}
+.box_ordercs .about_order .inner_about{display:table-cell;vertical-align:middle}
+.box_ordercs .info_order{display:block;overflow:hidden;font-size:12px;line-height:14px}
+.box_ordercs .num_order{float:left;font-weight:bold;color:#4495c3}
+.box_ordercs .date_order{float:left;padding-left:10px;color:#888}
+.box_ordercs .txt_product{display:block;overflow:hidden;padding-top:4px;font-size:13px;line-height:15px;letter-spacing:-0.03em;text-overflow:ellipsis;white-space:nowrap}
+.box_ordercs .info_sender{display:block;padding-top:3px;font-size:12px;line-height:14px;color:#888}
+.box_ordercs .info_sender .txt_from{display:inline-block;margin:1px 5px 0 0;font-weight:bold;font-size:11px;line-height:13px;vertical-align:top}
+.box_ordercs .btn_close{position:absolute;right:0;top:0;padding:20px 0 20px 20px}
+.box_ordercs .btn_close .ico_commercecs{width:10px;height:10px;background-position:-40px -30px}
+.box_ordercs .info_amount{display:block;padding:10px 0 0 2px;font-size:12px;line-height:14px;color:#888;font-family:'Apple SD Gothic Neo’,’Malgun Gothic',sans-serif}
+.box_ordercs .info_amount .num_amount{display:inline-block;padding-left:9px;font-weight:bold;letter-spacing:-0.03em;vertical-align:top}
+.bundle_entercs .box_private{padding:15px;font-size:13px;line-height:17px;color:#888;letter-spacing:-0.03em;background-color:#fafafa}
+.bundle_entercs .box_private .info_private{overflow:hidden;padding-top:17px}
+.bundle_entercs .info_private dt{float:left;clear:both}
+.bundle_entercs .info_private dd{overflow:hidden;padding-left:4px;word-wrap:break-word;word-break:break-all}
+.tab_giftcs{overflow:hidden;border-bottom:1px solid #e0e0e0;background-color:#fafafa}
+.tab_giftcs li{float:left;position:relative;width:50%}
+.tab_giftcs li+li:before{position:absolute;left:-1px;top:15px;bottom:15px;width:1px;background-color:#aaa;content:''}
+.tab_giftcs .link_tab{display:block;padding:14px 0 13px;font-size:15px;color:#888;line-height:18px;text-align:center}
+.tab_giftcs .link_tab[aria-selected="true"]{font-weight:bold;color:#222}
+.check_ordercs{position:relative;margin:15px 20px}
+.check_ordercs .inp_check{position:absolute;left:0;top:21px;z-index:-1;width:18px;height:18px;border:0 none;opacity:0.01;-webkit-appearance:none}
+.check_ordercs .lab_check{display:block;overflow:hidden}
+.check_ordercs .lab_check .ico_check{float:left;width:18px;height:18px;margin:21px 17px 0 0}
+.check_ordercs .box_ordercs{overflow:hidden;margin:0}
+.check_ordercs .box_ordercs .thumb_order{width:60px;height:60px}
+.check_ordercs .box_ordercs .about_order{height:60px;padding:0 0 0 70px}
+.check_ordercs .box_ordercs .txt_product{padding-top:6px;font-size:14px;line-height:16px}
+.check_ordercs .box_ordercs .info_sender{padding-top:10px}
+.check_ordercs .inp_check + .lab_check .ico_check{background-position:0 -25px}
+.check_ordercs .inp_check:checked + .lab_check .ico_check{background-position:-20px -30px}
+.check_ordercs .inp_check:disabled + .lab_check .ico_check{background-position:-65px -25px}
+.detail_ordercs{padding-bottom:80px}
+.notify_giftcs{padding:12px 0 9px;border-bottom:1px solid #efefef;font-size:12px;color:#888;line-height:14px;text-align:center;letter-spacing:-0.04em}
+.notify_shopcs{padding:13px 20px 12px;border-bottom:1px solid #efefef;font-size:13px;line-height:15px;color:#888;background-color:#fafafa}
+.notify_shopcs .date_buy{display:inline-block;margin-top:1px;font-size:12px;line-height:14px;letter-spacing:-0.03em;vertical-align:top}
+.detail_ordercs .pack_morecs{padding:5px 0 20px}
+.receive_ordercs{position:fixed;left:0;right:0;bottom:0;padding:15px 20px;border-top:1px solid #e0e0e0}
+.txt_noaskcs{padding:136px 0;line-height:20px;color:#222;letter-spacing:-0.02em;text-align:center}
+.panel_comfirmcs .state_confirm{display:inline-block;width:60px;height:20px;border-radius:10px;font-size:12px;color:#fff;line-height:21px;background-color:#b1b1b1;text-align:center;vertical-align:top}
+.panel_comfirmcs .state_confirm.state_ing{background-color:#666}
+.panel_comfirmcs .state_confirm.state_complete{background-color:#222}
+.ask_comfirmcs{padding:27px 20px 30px;border-bottom:1px solid #efefef}
+.ask_comfirmcs .top_ask{overflow:hidden;position:relative;padding:0 65px 15px 3px;border-bottom:1px solid #efefef}
+.ask_comfirmcs .top_ask .tit_ask{float:left;margin-top:4px}
+.ask_comfirmcs .ico_ask{width:24px;height:19px;background-position:0 -50px}
+.ask_comfirmcs .info_ask{overflow:hidden;padding-left:8px;font-size:13px;line-height:15px;color:#888}
+.ask_comfirmcs .date_ask{display:block}
+.ask_comfirmcs .txt_category{display:block;overflow:hidden;padding-top:2px;letter-spacing:-0.03em;text-overflow:ellipsis;white-space:nowrap}
+.ask_comfirmcs .top_ask .state_confirm{position:absolute;right:0;top:6px}
+.ask_comfirmcs .box_ordercs{margin:10px 15px}
+.ask_comfirmcs .box_ordercs .about_order{padding:0 0 0 62px}
+.ask_comfirmcs .txt_ask{padding-top:20px;line-height:20px;letter-spacing:-0.03em}
+.ask_comfirmcs .list_attachcs{padding-top:20px}
+.ask_comfirmcs .list_attachcs .file_attach{padding-right:126px}
+.ask_comfirmcs .list_attachcs .info_file{width:56px}
+.answer_comfirmcs{padding:20px 20px 30px;border-bottom:1px solid #efefef}
+.answer_comfirmcs .tit_answer{float:left;margin-top:7px}
+.answer_comfirmcs .ico_answer{width:22px;height:18px;background-position:-25px -50px}
+.answer_comfirmcs .about_answer{overflow:hidden;padding-left:13px}
+.answer_comfirmcs .date_answer{display:block;font-size:13px;line-height:20px;color:#888}
+.answer_comfirmcs .txt_answer{padding-top:9px;line-height:20px;letter-spacing:-0.03em}
+.panel_comfirmcs .btn_list{width:170px;margin:20px auto 0}
+.list_askcs li{padding:15px 20px 14px;border-bottom:1px solid #efefef}
+.list_askcs .link_ask{display:block}
+.list_askcs .info_ask{display:block;overflow:hidden}
+.list_askcs .state_confirm{float:left}
+.list_askcs .date_ask{display:block;overflow:hidden;height:20px;padding-left:7px;font-size:13px;line-height:21px;color:#888}
+.list_askcs .txt_ask{display:block;display:-webkit-box;overflow:hidden;max-height:40px;padding-top:10px;line-height:20px;letter-spacing:-0.03em;word-break:break-all;-webkit-box-orient:vertical;-webkit-line-clamp:2}
+.list_askcs .total_answer{display:block;padding-top:15px;line-height:20px;color:#888;letter-spacing:-0.03em}
+.list_askcs .total_answer .ico_commercecs{display:inline-block;width:7px;height:7px;margin:4px 8px 0 0;background-position:-85px -25px;vertical-align:top}
+.list_askcs .total_answer .num_answer{font-weight:bold}
+.panel_comfirmcs .txt_noaskcs{padding:136px 0 111px}
+.panel_comfirmcs .pack_morecs{padding-top:5px}
+
+/* 2019-10-01 추가 시작 */
+@media only screen and (max-width:321px) {
+	.detail_maincs .txt_welcome{width:230px;height:58px}
+}
+/* // 2019-10-01 추가 끝 */
+
+@media only screen and (max-width:359px) {
+	.head_customer{padding:0 10px}
+	.head_customer .link_logo .img_logo{width:326px;height:50px;margin-top:1px}
+	.head_customer .link_service .img_logo{width:138px;height:23px;margin-top:1px}
+	.head_customer .service_talkshop .img_logo{width:141px}
+	.head_customer .service_style .img_logo{width:110px}
+	.head_customer .service_sell .img_logo{width:110px}
+	.head_customer .service_shophow .img_logo{width:82px}
+	.head_customer .service_giftseller .img_logo{width:100px}
+	.head_customer .service_talkshopseller .img_logo{width:100px}
+	.head_customer .service_ad .img_logo{width:56px}
+	.head_customer .service_shophowopen .img_logo{width:85px}
+	.list_service .txt_service{font-size:12px;line-height:15px}
+}
+
+@media only screen and (min-width:375px) {
+	.list_service{margin:-20px 0 0 -15px}
+	.list_service li{width:90px;padding:20px 0 0 15px;-webkit-box-sizing:content-box;box-sizing:content-box}
+	.list_service .link_service{padding-top:120px}
+	.list_service .img_service{padding:12px 20px 0}
+	.list_service .txt_service{left:12px;right:17px;padding:0 0 9px}
+	.list_service .ico_arrow{left:73px;margin:0 0 14px}
+	.bundle_seller .list_service .link_service{padding-top:60px}
+	.bundle_seller .list_service .txt_service{left:10px;padding:12px 0 0}
+	.bundle_seller .list_service .ico_arrow{margin:16px 0 0}
+}/* pc 뷰 */
+@media only screen and (min-width:768px) {
+	input::-ms-clear{display:none}
+	a:active, a:hover{text-decoration:underline}
+	a:active{background-color:transparent}
+	.ir_pm{display:block;overflow:hidden;font-size:0;line-height:0;text-indent:-9999px}
+
+	#kakaoContent{padding-bottom:160px}
+	#mArticle{max-width:1100px;margin:0 auto;padding:0 7.69% 50px}
+
+	.view_mo{display:none}
+	.view_pc{display:block}
+	.btn_commcs{height:50px;font-size:18px;line-height:51px;text-decoration:none}
+	.ico_commercecs{background-image:url(https://st.kakaocdn.net/commerce_cs/images/pc/ico_commercecs_210222.png);-webkit-background-size:auto;background-size:auto}/* 2021-02-22 수정 */
+
+	/* head */
+	.head_customer{position:relative;padding:0 50px;box-shadow:0 1px 0 rgba(0,0,0,.1)}
+	.head_customer .tit_logo{max-width:1200px;margin:0 auto}
+	.head_customer .link_logo{padding:28px 0 27px;text-decoration:none}
+	.head_customer .link_logo .img_logo{width:254px;height:25px;background-image:url(E:/Library/Downloads/img_logo3.png)}
+	.head_customer .link_logo:only-child .img_logo{background-image:url(E:/Library/Downloads/img_logo3.png)}
+	.head_customer .ir_wa{font-size:22px;line-height:25px}
+
+
+	/* foot */
+	/* 2019-10-01 수정 시작 */
+	.foot_customer{padding:54px 0 61px;border-top-color:#e0e0e0;color:#4a4a4a}
+	.foot_customer .tit_commerce, .foot_customer .link_cs{font-size:16px;line-height:22px;letter-spacing:-0.056em;color:#4a4a4a}/* 2021-01-22 수정 *//* 2021-03-15 수정 */
+	.foot_customer .txt_copyright{font-size:14px;line-height:22px}
+	/* // 2019-10-01 수정 끝 */
+	.foot_customer .bar_g{width:1px;height:10px;margin:5px 12px 0}/* 2021-03-15 추가 */
+	.foot_customer .txt_copyright .link_service{color:#4a4a4a}
+
+	/* main */
+	.detail_maincs .txt_welcome{width:550px;height:120px;margin:80px 0 0 20px;background-image:url(https://st.kakaocdn.net/commerce_cs/images/pc/txt_welcome.png)}
+	.detail_maincs .link_main{margin-bottom:94px;font-size:18px;line-height:21px;text-indent:3px}/* 2021-02-22 수정 */
+	/* 2021-02-22 추가 시작 */
+	.detail_maincs .link_main .ico_arr{width:5px;height:9px;margin:4px 0 0 7px;background-position:0 -20px}
+	.wrap_tooltip .btn_info{margin-left:5px;padding:6px}
+	.wrap_tooltip .btn_info .ico_commercecs{width:19px;height:19px;background-position:-130px -30px}
+	.wrap_tooltip .tooltip_layer{width:340px;top:24px;left:258px;padding:21px 19px 17px;border-color:#ddd;box-shadow:0 2px 10px 4px rgb(0 0 0 / 4%);max-width:none}
+	.wrap_tooltip .tooltip_layer .tit_tooltip{font-size:16px;line-height:20px;color:#000;letter-spacing:0}
+	.wrap_tooltip .tooltip_layer .txt_desc{margin-top:16px;font-size:14px;line-height:22px;letter-spacing:0}
+	.wrap_tooltip .tooltip_layer .btn_close .ico_close{width:14px;height:20px;margin:12px 14px;background-position:-70px -60px;opacity:0.35}
+	/* // 2021-02-22 추가 끝 */
+	.detail_maincs .tit_main{font-size:20px;line-height:30px;color:#9b9b9b;letter-spacing:-0.03em}/* 2020-12-14 수정 */
+	.detail_maincs .bundle_buyer{margin:77px 0 0 20px}
+	.list_service{padding-top:37px;margin:-40px 0 0 -30px}
+	.list_service li{width:180px;padding:40px 0 0 30px}
+	.list_service .link_service{padding-top:240px;box-shadow:5px 5px 10px rgba(0,0,0,.03)}
+	.list_service .img_service{padding:24px 40px 0}
+	.list_service .txt_service{left:24px;right:36px;padding:0 0 18px;font-size:22px;line-height:28px}
+	.list_service .ico_arrow{left:144px;width:8px;height:14px;margin:0 0 22px;background-position:0 0}
+	.detail_maincs .bundle_seller{margin:62px 0 0 20px}/* 2021-02-22 수정 */
+	.bundle_seller .list_service{padding-top:39px}
+	.bundle_seller .list_service .link_service{padding-top:120px}
+	.bundle_seller .list_service .txt_service{left:20px;padding:24px 0 0}
+	.bundle_seller .list_service .ico_arrow{margin:33px 0 0;background-position:-10px 0}
+
+	/* help */
+	.search_helpcs{padding:41px 0 50px;background-color:#fae102}
+	.search_helpcs .txt_search{display:block;padding-bottom:19px;font-size:18px;line-height:30px;color:rgba(74,74,74,.6);text-align:center;letter-spacing:-0.06em}
+	.search_helpcs .box_search{width:564px;padding:20px 80px 20px 26px;margin:0 auto;border:0 none;border-radius:0;background-color:#fff}
+	.search_helpcs .tf_search{height:40px;font-size:24px;line-height:41px;letter-spacing:-0.06em}
+	.search_helpcs .btn_search{padding:15px 22px 15px 0}
+	.search_helpcs .btn_search .ico_commercecs{width:50px;height:50px;background-position:-20px 0}
+	.sort_helpcs{margin-top:2px}
+	.sort_helpcs .upper_sort{position:static;height:auto;border-bottom:1px solid #d8d8d8;box-shadow:none}
+	.sort_helpcs .list_upper{padding:0;text-align:center}
+	.sort_helpcs .list_upper li{margin:0 30px}
+	.sort_helpcs .list_upper .link_upper{padding:28px 0;font-size:20px;line-height:24px;color:#4a4a4a;text-decoration:none}
+	.sort_helpcs .list_upper .link_all{color:#222}
+	.sort_helpcs .list_upper .on{color:#222}
+	.sort_helpcs .list_upper .on:after{left:0;right:0;height:4px}
+	.sort_helpcs .list_under{overflow:auto;position:static;border-bottom:1px solid #ebebeb;font-size:0;background-color:#fcfcfc;text-align:center;white-space:nowrap}/* 2019-10-01 수정 */
+	.sort_helpcs .list_under:after{content:normal}
+	.sort_helpcs .list_under li{display:inline-block;float:none;position:static;width:auto;margin:0 16px;border-bottom:0 none;vertical-align:top}
+	.sort_helpcs .list_under li:before{content:normal}
+	.sort_helpcs .list_under .link_under{overflow:visible;padding:20px 0 19px;font-size:18px;line-height:21px;white-space:normal;text-overflow:clip;text-decoration:none;letter-spacing:-0.07em}
+	.sort_helpcs .list_under .on{color:#222}/* 2019-10-01 수정 */
+	.tit_commercecs{padding:80px 0 37px;font-size:30px;line-height:36px}
+	.notice_helpcs{margin:-7px 0 30px;border-top:0 none;border-radius:30px;font-size:18px;line-height:21px;background-color:#fafafa}
+	.notice_helpcs .tit_notice{padding:0 30px 0 40px}
+	.notice_helpcs .tit_notice .link_all{padding:19px 0 20px;letter-spacing:-0.05em}
+	.notice_helpcs .bundle_notice{padding-right:105px}
+	.notice_helpcs .link_notice{padding:19px 0 20px}
+	.notice_helpcs .date_notice{top:20px;width:105px;font-weight:bold;font-size:14px}
+	.list_helpcs{border-bottom-color:#e0e0e0}
+	.list_helpcs li{padding:27px 40px 23px;border-top-color:#e0e0e0}
+	.list_helpcs .ask_help{padding-left:30px;font-size:18px;line-height:30px}
+	.list_helpcs .ask_help .link_ask{color:#000}
+	.list_helpcs .ico_ask{top:5px;left:0;width:20px;height:16px;background-position:0 -60px}
+	.list_helpcs .answer_help{margin-top:34px;padding:0 0 1px 30px;font-size:18px;line-height:30px}
+	.list_helpcs .ico_answer{top:5px;left:0;width:17px;height:15px;background-position:-30px -60px}
+	/* 2020-08-21 추가 시작 */
+	.list_helpcs2 .ask_help{padding-left:0}
+	.list_helpcs2 .answer_help{padding-left:0}
+	/* 2020-08-21 추가 끝 */
+	/* 2020-12-14 추가 시작 */
+	.list_helpcs3 .ask_help{padding-left:0}
+	.list_helpcs3 .answer_help{padding-left:0}
+	/* 2020-12-14 추가 끝 */
+	.pack_morecs{margin:0 22.27%}
+	.pack_morecs .link_more{height:26px;padding:27px 0 17px;font-size:18px;line-height:28px;text-decoration:none}
+	.pack_morecs .link_more .ico_commercecs{width:14px;height:14px;margin:5px 8px 0 0;background-position:-80px -30px}
+	.counsel_helpcs{margin-top:78px}
+	.counsel_helpcs .time_counsel{line-height:20px}
+	.counsel_helpcs .time_counsel dt,.counsel_helpcs .time_counsel dd{font-size:16px}
+	.counsel_helpcs .time_counsel dt{padding-right:14px}
+	.counsel_helpcs .wrap_btn{margin-top:11px}/* 2019-10-01 수정 */
+	/*.counsel_helpcs .wrap_btn .btn_counsel{width:180px;height:54px;line-height:55px;text-decoration:none}
+	.counsel_helpcs .wrap_btn .btn_counsel+.btn_counsel{margin-left:10px}
+	.counsel_helpcs .ico_talk{width:26px;height:24px;margin:15px 6px 0 0;background-position:-80px 0} 2019-10-01 삭제 */
+	/* 2019-10-01 추가 시작 */
+	.counsel_helpcs .wrap_btn [class*="btn_"]+[class*="btn_"]{margin-left:10px}
+	.btn_counselcs{width:180px;height:54px;font-size:18px;line-height:55px}
+	.btn_counselcs .ico_talk{width:21px;height:20px;margin:16px 6px 0 0;background-position:-100px -30px}
+	.btn_inquirycs{width:176px;height:50px;border-width:2px;font-size:18px;line-height:54px}
+	.btn_counselcs:hover,.btn_inquirycs:hover{text-decoration:none}
+	/* // 2019-10-01 추가 끝 */
+	.detail_helpcs .txt_noresult{padding:63px 0 100px;font-size:20px;line-height:30px}
+
+	/* inquiry */
+	.detail_entercs{padding:10px 0 50px;border:solid #222;border-width:2px 0}/* 2019-08-14 수정 */
+	.detail_entercs .check_before{overflow:hidden;margin:-10px 0 9px;padding:30px 40px 27px;border-bottom:1px solid #e0e0e0;background-color:#fafafa}
+	.detail_entercs .check_before .tit_before{float:left;width:130px;margin-right:20px;font-weight:normal}/* 2019-10-01 수정 */
+	.detail_entercs .check_before .link_before{height:auto;border:0 none;font-size:20px;line-height:24px;text-align:left;word-wrap:break-word;word-break:keep-all;text-decoration:none;pointer-events:none}
+	.detail_entercs .check_before .ico_fold{display:none}
+	.detail_entercs .check_before .about_before{display:block;overflow:hidden;padding:1px 0 0 10px;background-color:transparent}/* 2020-02-20 수정 */
+	.detail_entercs .list_before li{font-size:16px;line-height:26px}/* 2020-02-20 수정 */
+	/* .detail_entercs .list_before li:before{position:absolute;left:0;top:10px;width:4px;height:4px;background-color:#4a4a4a;content:''} 2020-02-20 삭제 */
+	.detail_entercs .list_before li+li{margin-top:0}
+	.bundle_entercs{position:relative;padding:40px 50px 0 0}
+	.bundle_entercs .tit_bundle{position:absolute;left:0;top:40px;width:138px;margin:14px 32px 0 0;font-weight:bold;font-size:18px;line-height:21px;letter-spacing:-0.03em;text-align:right}
+	.bundle_entercs .tit_bundle .ico_require{width:10px;height:10px;margin:2px 0 0 6px;background-position:-90px -50px}
+	.bundle_entercs .tit_bundle.tit_advertiser{width:128px;margin:2px 0 0 42px;text-align:left}
+	.bundle_entercs .tit_type2 .ico_require{position:absolute;right:-16px;top:0}
+	.bundle_entercs .about_bundle{padding:0 0 0 170px}
+	.select_entercs .link_select{height:48px;padding:0 37px 0 12px;font-size:18px;line-height:49px;text-decoration:none}
+	.select_entercs .link_select .ico_arrow{right:29px;top:21px;width:8px;height:7px;background-position:-60px -50px}
+	/* .select_entercs .box_opt{display:none} 2021-12-01 제삭 */
+	.select_entercs .opt_layer{overflow:auto;position:absolute;left:0;right:0;top:50px;z-index:10;max-height:159px;border:solid #aaa;border-width:0 1px 1px;background-color:#fff}
+	.select_entercs .list_opt{padding:14px 0}
+	.select_entercs .list_opt .link_opt{display:block;overflow:hidden;padding:0 14px;font-size:18px;color:#222;line-height:36px;text-decoration:none;white-space:nowrap;text-overflow:ellipsis}
+	.select_entercs.select_open .opt_layer{display:block}
+	.select_entercs.select_open .link_select .ico_arrow{background-position:-80px -50px}
+	.select_entercs.select_disabled .link_select .ico_arrow{background-position:-70px -50px}
+	.select_entercs.select_disabled .opt_layer{display:none}
+	.bundle_entercs .split_select{margin:0 -5px}
+	.bundle_entercs .split_select .select_entercs{padding:0 5px}
+	.bundle_entercs .split_select .opt_layer{left:5px;right:5px}
+	.write_entercs{padding:12px 14px 10px}
+	.write_entercs .tf_g{font-size:18px;line-height:26px;letter-spacing:-0.02em}
+	.write_entercs.write_long .tf_g{height:298px;padding:14px}
+	.bundle_entercs .attach_do{overflow:hidden;padding:24px 0 0}
+	.bundle_entercs .attach_do .btn_attach{float:left;width:300px;margin:6px 25px 0 0}
+	.bundle_entercs .btn_attach .ico_commercecs{width:14px;height:14px;margin:17px 7px 0 0;background-position:-50px -60px}
+	.bundle_entercs .btn_attach .inp_file{cursor:pointer}
+	.bundle_entercs .attach_do .desc_attach{float:left;padding-top:10px;font-size:14px;line-height:22px}
+	.bundle_entercs .attach_view{padding:31px 0 9px}
+	.list_attachcs li{padding-top:10px}
+	.list_attachcs .file_attach{height:48px;padding:0 210px 0 18px;line-height:49px}
+	.list_attachcs .file_attach .name_file{font-size:16px}
+	.list_attachcs .file_attach .info_file{width:149px}
+	.list_attachcs .file_attach .size_file{font-size:16px}
+	.list_attachcs .file_attach .btn_del{padding:15px 30px}
+	.list_attachcs .file_attach .ico_del{width:14px;height:20px;background-position:-70px -60px}
+	.bundle_entercs .total_attach{padding:0 15px 0 0}
+	.bundle_entercs .total_attach dd{font-size:16px;line-height:37px}
+	.bundle_entercs .total_attach dd~dd{margin-left:4px}
+	.bundle_entercs .split_tel .select_entercs{width:120px;margin-right:10px}
+	.write_entercs.write_tel{padding-left:22px}
+	.detail_agreecs{padding-top:30px}/* 2019-08-14 추가 */
+	.agree_entercs{padding:30px 0 0;text-align:center}
+	.check_entercs{display:inline-block;height:20px;vertical-align:top}
+	.check_entercs .inp_check{width:20px;height:20px}
+	.check_entercs .lab_check{font-size:18px;line-height:21px;letter-spacing:-0.04em;cursor:pointer}
+	.check_entercs .lab_check .ico_commercecs{width:20px;height:20px;margin-right:11px}
+	.check_entercs .inp_check+.lab_check .ico_commercecs{background-position:-110px 0}
+	.check_entercs .inp_check:checked+.lab_check .ico_commercecs{background-position:-140px 0}
+	.check_entercs .link_all{padding:0 0 0 13px;font-size:18px;line-height:21px}
+	.agree_entercs .box_all{padding:49px 0 30px;text-align:left}
+	.agree_entercs .box_all .tit_all{font-size:18px;line-height:21px}
+	.agree_entercs .info_item{overflow:hidden;padding-top:16px}
+	.agree_entercs .info_item dt{float:left;font-size:16px;line-height:24px}
+	.agree_entercs .info_item dd{overflow:hidden;padding:0 0 0 5px;font-size:16px;line-height:24px}
+	.agree_entercs .list_item{display:table;width:100%;margin-top:16px;padding-top:45px;border-top:1px solid #d8d8d8;table-layout:fixed}
+	.agree_entercs .list_item li{display:table-cell;padding:11px 0  12px;border-top-color:#efefef;font-size:16px;line-height:26px;letter-spacing:-0.04em;vertical-align:middle;text-align:center}
+	.agree_entercs .list_item .tit_item{right:0;top:-35px;width:auto;-webkit-transform:none;transform:none}
+	.agree_entercs .list_item .about_item{padding-left:0}
+	.agree_entercs .list_item .on .tit_item{font-size:18px} /* 2021-08-19 추가 */
+	.agree_entercs .list_item .on .about_item{font-size:17px;line-height:26px} /* 2021-08-19 수정 */
+	.agree_entercs .desc_item{padding-top:20px;font-size:16px;line-height:24px}
+	.check_entercs.fill_error{margin-top:30px}/* 2019-08-14 수정 */
+	.detail_agreecs .agree_entercs:first-child .check_entercs.fill_error{margin-top:0}/* 2019-08-14 추가 */
+	.fld_entercs .txt_error{font-size:14px;line-height:17px;letter-spacing:-0.02em}
+	.bundle_entercs .split_fill .txt_error,.write_entercs .txt_error,.select_entercs .txt_error{top:-25px}
+	.check_entercs .txt_error{right:0;top:-27px;text-align:center}/* 2019-08-14 수정 */
+	.bundle_entercs .split_select .txt_error{right:5px}
+	.bundle_entercs .attach_view .txt_error{bottom:21px}
+	.receive_entercs{padding:40px 0 0}/* 2019-08-14 수정 */
+	.receive_entercs .btn_receive{width:500px;height:70px;margin:0 auto;font-size:24px}
+	.receive_entercs .btn_receive:disabled{color:rgba(34,34,34,.15)}
+
+	/* receive */
+	/*.alert_receivecs{padding:90px 0 40px}
+	.alert_receivecs .img_alert{width:300px;height:300px;background-image:url(https://st.kakaocdn.net/commerce_cs/images/pc/img_receive.png)}
+	.alert_receivecs .img_fail{background-image:url(https://st.kakaocdn.net/commerce_cs/images/pc/img_receive2.png)}
+	.alert_receivecs .desc_alert{padding-top:30px;font-size:24px;line-height:36px}
+	.alert_receivecs .btn_alert{min-width:300px;margin-top:60px;padding:0 45px;font-weight:bold;text-decoration:none} 2019-08-14 삭제 */
+	/* 2019-08-14 추가 시작 */
+	.alert_commercecs{padding:90px 0 40px}
+	.alert_commercecs .img_alert{width:300px;height:300px;background-image:url(https://st.kakaocdn.net/commerce_cs/images/pc/img_receive.png)}
+	.alert_commercecs .img_fail{background-image:url(https://st.kakaocdn.net/commerce_cs/images/pc/img_receive2.png)}
+	.alert_commercecs .img_access{background-image:url(https://st.kakaocdn.net/commerce_cs/images/pc/img_fail.png)}
+	.alert_commercecs .img_found{background-image:url(https://st.kakaocdn.net/commerce_cs/images/pc/img_fail2.png)}
+	.alert_commercecs .tit_alert{padding-top:30px;font-size:24px;line-height:36px}
+	.alert_commercecs .tit_type2{font-weight:bold;letter-spacing:-0.04em}
+	.alert_commercecs .desc_alert{padding-top:17px;margin-bottom:65px;font-size:18px;color:#222;line-height:30px;letter-spacing:-0.05em}
+	.alert_commercecs .btn_alert{min-width:300px;margin-top:60px;padding:0 45px;text-decoration:none}/* 2019-10-01 수정 */
+	/* // 2019-08-14 추가 끝 */
+}
+
+@media only screen and (min-width:1260px) {
+	.bundle_entercs .split_tel .select_entercs{width:200px}
+	.agree_entercs{padding:30px 50px 0;text-align:left}/* 2019-08-14 수정 */
+	.agree_entercs .check_entercs{margin-left:352px}/* 2019-08-14 추가 */
+	.agree_entercs .box_all{padding-left:120px}
+	.detail_entercs .check_before .tit_before{width:240px}
+}
+
+/* windows */
+@media only screen and (min-width:768px) {
+	.os_windows .search_helpcs .box_search{padding:15px 80px 25px 26px}
+	.os_windows .tit_commercecs .num_result{margin-top:4px;line-height:32px}
+	.os_windows .list_helpcs li{padding:22px 40px 28px}
+	.os_windows .list_helpcs .ico_ask{top:9px}
+	.os_windows .list_helpcs .ico_answer{top:9px}
+	.os_windows .pack_morecs .link_more{line-height:22px}
+	/*.os_windows .counsel_helpcs .wrap_btn .btn_counsel{line-height:48px} 2019-10-01 삭제 */
+	/* 2019-10-01 추가 시작 */
+	.os_windows .btn_counselcs{line-height:46px}
+	.os_windows .btn_inquirycs{line-height:44px}
+	/* // 2019-10-01 추가 끝 */
+	.os_windows .btn_commcs{line-height:44px}
+	.os_windows .detail_entercs .list_before li:before{top:14px}
+	.os_windows .bundle_entercs .tit_bundle{margin-top:10px}
+	.os_windows .bundle_entercs .tit_bundle.tit_advertiser{width:144px;margin-left:26px}
+	.os_windows .select_entercs .link_select{line-height:44px}
+	.os_windows .write_entercs{padding:8px 14px 14px}
+	.os_windows .write_entercs.write_long{padding:0}
+	.os_windows .check_entercs .lab_check .ico_commercecs{margin-top:3px}
+	.os_windows .list_attachcs .file_attach{line-height:45px}
+	.os_windows .agree_entercs .list_item .tit_item{top:-38px}
+	.os_windows .select_entercs .list_opt{padding:10px 0 18px}
+	.os_windows .foot_customer .bar_g{margin-top:7px}/* 2021-03-15 추가 */
+}
