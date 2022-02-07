@@ -12,7 +12,7 @@
 </head>
 <body>
 <header id="testHead" class="head_customer">
-  <h1 class="tit_logo"> <a href="/" class="link_logo"> <span class="img_logo"> <span class="ir_wa">아나바다고객센터 </span> </span> </a> </h1>
+  <h1 class="tit_logo"> <a href="/mars" class="link_logo"> <span class="img_logo"> <span class="ir_wa">아나바다고객센터 </span> </span> </a> </h1>
 </header>
 <hr class="hide">
 <main id="kakaoContent">

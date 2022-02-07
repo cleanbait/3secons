@@ -23,36 +23,14 @@ public class HomeController {
 	 * Simply selects the home view to render by returning its name.
 	 */
 	@RequestMapping(value = "/", method = RequestMethod.GET)
-	public String home(Locale locale, Model model) {
-		logger.info("Welcome home! The client locale is {}.", locale);
-		
-		Date date = new Date();
-		DateFormat dateFormat = DateFormat.getDateTimeInstance(DateFormat.LONG, DateFormat.LONG, locale);
-		
-		String formattedDate = dateFormat.format(date);
-		
-		model.addAttribute("serverTime", formattedDate );
+	public String home() {
+		logger.info("메인페이지");
 		
 		return "home";
 	}
 	
-	@RequestMapping(value = "kimdongju/real", method = RequestMethod.GET)
-	public String kimdongju() {
-		return "kimdongju/real";
-	}
-	
-	@RequestMapping(value = "kimgunu/my", method = RequestMethod.GET)
-	public String kimgunu() {
-		return "kimgunu/my";
-	}
-	
-	@RequestMapping(value = "joenho/hi", method = RequestMethod.GET)
-	public String joenho() {
-		return "joenho/hi";
-	}
-	
-	@RequestMapping(value = "onejonguck/yo", method = RequestMethod.GET)
-	public String onejonguck() {
-		return "onejonguck/yo";
+	@RequestMapping(value = "home", method = RequestMethod.GET)
+	public String main() {
+		return "home";
 	}
 }
