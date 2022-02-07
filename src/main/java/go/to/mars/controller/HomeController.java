@@ -36,9 +36,9 @@ public class HomeController {
 		return "home";
 	}
 	
-	@RequestMapping(value = "kimdongju/hello", method = RequestMethod.GET)
+	@RequestMapping(value = "kimdongju/real", method = RequestMethod.GET)
 	public String kimdongju() {
-		return "kimdongju/hello";
+		return "kimdongju/real";
 	}
 	
 	@RequestMapping(value = "kimgunu/my", method = RequestMethod.GET)
@@ -55,5 +55,4 @@ public class HomeController {
 	public String onejonguck() {
 		return "onejonguck/yo";
 	}
-	
 }
